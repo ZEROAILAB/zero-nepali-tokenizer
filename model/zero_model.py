@@ -160,12 +160,12 @@ class TransformerBlock(nn.Module):
 
 class ZEROTransformer(nn.Module):
 
-    def __init__(self):
+    def __init__(self, vocab_size=VOCAB_SIZE):
         super().__init__()
 
         # Token embeddings
         self.token_embedding = nn.Embedding(
-            VOCAB_SIZE,
+            vocab_size,
             EMBED_DIM
         )
 
@@ -191,7 +191,7 @@ class ZEROTransformer(nn.Module):
         # Output head
         self.output_head = nn.Linear(
             EMBED_DIM,
-            VOCAB_SIZE,
+            vocab_size,
             bias=False
         )
 

@@ -27,3 +27,12 @@ data/processed/
 *.backup
 *_backup.py
 train_day9_backup.py
+
+# All model checkpoints
+checkpoints/
+
+# Wikipedia datasets
+data/wikipedia/
+
+# Backup files
+*.bak
