@@ -4,14 +4,8 @@ __pycache__/
 .venv/
 venv/
 
-# Model checkpoints
-checkpoints/*.pt
-checkpoints/*.pth
-checkpoints/*.bin
-
-# Dataset files
-data/raw/
-data/processed/
+# Environment secrets
+.env
 
 # macOS
 .DS_Store
@@ -23,16 +17,17 @@ data/processed/
 # Logs
 *.log
 
-# Local backup files
+# Local backups
 *.backup
+*.bak
 *_backup.py
 train_day9_backup.py
 
-# All model checkpoints
+# Model checkpoints and weights
 checkpoints/
+*.pt
+*.pth
+*.bin
 
-# Wikipedia datasets
-data/wikipedia/
-
-# Backup files
-*.bak
+# Datasets
+data/
