@@ -1,2 +1,4 @@
 tokenizers==0.22.2
 regex==2026.1.15
+
+datasets==5.2.0
